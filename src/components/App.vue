@@ -3,12 +3,10 @@
     <v-main>
       <v-container fluid>
 
-        <!-- <SimpleTable/> -->
         <VrTable
           v-model="rows"
           :cols="cols"
           @updateCols="onUpdateCols"/>
-        <!-- <TestTable/> -->
 
       
       </v-container>
@@ -21,18 +19,12 @@
 </template>
 
 <script>
-//test
-import TestTable from './TestTable'
 import VrTable from './VrTable'
-import SimpleTable from './SimpleTable'
 
 export default {
   name: "App",
   components:{
-    //test用
-    TestTable,
     VrTable,
-    SimpleTable,
   },
   data() {
     return {

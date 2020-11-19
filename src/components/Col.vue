@@ -28,10 +28,11 @@ export default {
       }
     }
   },
+
   methods: {
     applyChanges() {
       const col = {...this.internalValue}
-      this.$emit('input', col)
+      // this.$emit('input', col)
       this.$emit('change', col)
     },
   }

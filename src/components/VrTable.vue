@@ -16,7 +16,8 @@
           <tr>
             <td v-for="(col, idx) in innerCols" :key="idx"
               class="table-col pa-1 py-2">
-              <TableCol v-model="innerCols[idx]"
+              <TableCol 
+                v-model="innerCols[idx]"
                 @change="onInnerColChange"/>
             </td>
           </tr>
@@ -113,23 +114,10 @@ export default {
         article_items: [],
       }
     },
-    // cols: {
-    //   get() {
-    //     const { cols } = this.colgroup || {}
-    //     return cols || []
-    //   },
-    //   set(val) {
-    //     this.colgroup = {
-    //       ...this.colgroup,
-    //       cols: val,
-    //     }
-    //   }
-    // }
   },
   data(){
     return{
       selectedCells: [],
-      //簡略化のため一つに絞る
       cellCommands:[
         { cmd: 'addColumnBefore', text:"左に列追加", icon: 'mdi-table-column-plus-before' },
         { cmd: 'addColumnAfter', text:"右に列追加", icon: 'mdi-table-column-plus-after' },
@@ -389,7 +377,8 @@ export default {
       ) > -1
     },
   }
-};
+}
+
 </script>
 
 <style lang="scss" scoped>

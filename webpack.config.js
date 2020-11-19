@@ -76,7 +76,7 @@ module.exports = {
     // make sure to include the plugin!
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: 'My Sample App',
+      title: 'Vue Test',
     })
   ]
 }
