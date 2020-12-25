@@ -9,11 +9,12 @@
 </template>
 
 <script>
-import SyncChiled from "./SyncChiled" 
+// import SyncChiled from "./SyncChiled" 
 
 export default {
   components:{
-    SyncChiled  //子テンプレをタグとして使えるようにする
+    SyncChiled: () => import("./SyncChiled")
+    //子テンプレをタグとして使えるようにする
   },
   data(){
     return{

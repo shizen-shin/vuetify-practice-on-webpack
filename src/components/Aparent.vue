@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Sync />
+    <Cmp />
   </v-app>
 </template>
 
@@ -35,11 +35,13 @@ import vBtnToggle from "./vBtnToggle"
 import vBtnToggle2 from "./vBtnToggle2"
 import inner from "./inner"
 import shortHandProp from "./shortHandProp"
-import transformation from "./transformation"
+import transformation from "./transformation" 
+import Cmp from './component'
 
 export default {
   name: "Parent",
   components:{
+    Cmp,
     Sync,
     transformation,
     shortHandProp,
@@ -70,7 +72,6 @@ export default {
     setterWatch1,
     cellMerge,
     vBtnToggle,
-    vBtnToggle2,
   },
   data(){
     return{
