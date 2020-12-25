@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>added </p>
+    <p>added</p>
     {{price}}
   </div>
 </template>
