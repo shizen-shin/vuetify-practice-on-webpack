@@ -1,7 +1,7 @@
 <template>
   <div>
-    {{price}}
     <p>added </p>
+    {{price}}
   </div>
 </template>
 
