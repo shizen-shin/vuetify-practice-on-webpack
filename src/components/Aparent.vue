@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Cmp />
+    <Drag />
   </v-app>
 </template>
 
@@ -37,10 +37,13 @@ import inner from "./inner"
 import shortHandProp from "./shortHandProp"
 import transformation from "./transformation" 
 import Cmp from './component'
+import Drag from './drag'
+import scanTable from "./scantable"
 
 export default {
   name: "Parent",
   components:{
+    Drag,
     Cmp,
     Sync,
     transformation,
